@@ -178,7 +178,7 @@
     let currentLang = 'de';
     let currentFilter = 'all';
 
-    // Topics Database with Active States & Dynamic Details
+   // Topics Database with Active States & Dynamic Details
     const topicsData = [
         {
             id: 1,
@@ -205,10 +205,32 @@
 
             detailDE: {
 
-    overview: 'Jeder Mensch interpretiert Fakten durch seine eigene "kognitive Brille". Wissenschaftliche Forschung zeigt, dass verschiedene Faktoren beeinflussen können, wie wir dieselbe Information wahrnehmen und bewerten. <b>Welche Faktoren das sind, wird nach Abschluss der aktuellen Diskussionsphase veröffentlicht.</b>',
+    overview: 'Warum denken Menschen verschiedenes, obwohl sie dieselbe Information bekommen? Mehrere Kategorien pro Zettel waren möglich, weshalb sich die Prozente nicht zu 100% addieren[cite: 1]. Hier ist die Auswertung der Umfrage an unserer Schule:',
 
     insights: [
-        '<div class="locked-info"><b>Dieser Bereich ist derzeit noch gesperrt</b><br><br>Die Kernpunkte werden erst nach Abschluss der aktuellen Diskussion im Schulfoyer veröffentlicht. So erhalten alle Teilnehmenden die Möglichkeit, sich zunächst eine eigene Meinung zu bilden.</div>'
+        '<strong>Umfrageergebnisse an der Schule (Wie erklärt unsere Schule diesen unterschied?):</strong><br>' +
+        '<ul>' +
+        '<li>Eigene Erfahrungen: 55,2 %[cite: 1, 3]</li>' +
+        '<li>Vorwissen / individuelle Interpretation: 48,3 %[cite: 1, 3]</li>' +
+        '<li>Umfeld / Sozialisation: 44,8 %[cite: 1, 3]</li>' +
+        '<li>Kultur / Herkunft: 27,6 %[cite: 1, 4]</li>' +
+        '<li>Erziehung: 27,6 %[cite: 1, 4]</li>' +
+        '<li>Werte / Überzeugungen: 17,2 %[cite: 1, 4]</li>' +
+        '<li>Medien / äußere Einflüsse: 13,8 %[cite: 1, 4]</li>' +
+        '<li>Lebensbedingungen / Interessen: 6,9 %[cite: 1, 4]</li>' +
+        '<li>Biologische Faktoren: 6,9 %[cite: 1, 4]</li>' +
+        '</ul>',
+
+        '<strong>Die Meinungen der Schule finden sich in vier zentralen wissenschaftlichen Erkenntnissen wieder:[cite: 1, 4]</strong><br><br>' +
+        '<strong>1. Kognitiver Filter:</strong> Wir nehmen Informationen nie völlig neutral auf. Unser Vorwissen, unsere bisherigen Erfahrungen & persönlichen Erwartungen wirken wie eine unsichtbare Brille[cite: 1, 4].<br><br>' +
+        '<strong>2. Bisherige Überzeugungen („Confirmation Bias“):</strong> Wir haben die Tendenz, Informationen unbewusst auszuwählen oder zu interpretieren, dass sie mit bereits bestehenden Überzeugungen vereinbar sind. Wir nehmen Fakten also nicht nur passiv auf, wir interpretieren sie so, dass unser Weltbild stabil bleibt[cite: 1, 4].<br><br>' +
+        '<strong>3. Informationsquellen & Vertrauen:</strong> Besonders wenn wir bei einem Thema unsicher sind, orientieren wir uns an anderen. Welche Informationen wir glauben, hängt stark davon ab, wem wir Kompetenz zuschreiben und Vertrauen[cite: 1, 4].<br><br>' +
+        '<strong>4. Das vier Ohren Modell:</strong> Nach dem 4 Ohren Modell enthält jede Aussage vier Ebenen. Zwei Personen hören zwar exakt dieselben Worte, nehmen sie aber auf unterschiedlichen „Ohren“ wahr[cite: 1, 4].',
+
+        '<strong>Was sagt die Wissenschaft noch dazu?[cite: 1, 4]</strong><br><br>' +
+        '<strong>Gefühle & Neurowissenschaften:</strong> Das Gehirn bewertet Informationen zuerst emotional, bevor das rationale Denken einsetzt. Stimmung & Emotionen beeinflussen das Denken stark[cite: 1, 4].<br><br>' +
+        '<strong>Framing:</strong> Die Formulierung einer Information bestimmt deren Wirkung und löst unterschiedliche Gedanken aus (z.B. 90% Überlebensrate vs. 10% Sterberate)[cite: 1, 4].<br><br>' +
+        '<strong>Motiviertes Denken:</strong> Bedroht eine Information die eigene Identität oder Gruppenzugehörigkeit, schaltet das Gehirn auf Abwehr, um Selbst- und Weltbild zu schützen[cite: 1, 4].'
     ],
 
     question: 'Welches Argument hat deine Sichtweise auf ein Thema in letzter Zeit am stärksten verändert?'
@@ -217,16 +239,32 @@
 
             detailEN: {
 
-                overview: 'Every person interprets facts through their own "cognitive lens." Scientific research suggests that a variety of factors can influence how we perceive and evaluate the very same information. <b>What those factors are will be revealed after the current discussion phase has concluded.</b>',
+                overview: 'Why do people think differently even though they receive the same information? Multiple categories per note were possible, which is why percentages do not add up to 100%[cite: 1]. Here are the results of our school survey:',
 
                 insights: [
+                    '<strong>School Survey Results:</strong><br>' +
+                    '<ul>' +
+                    '<li>Personal experiences: 55.2 %[cite: 1, 3]</li>' +
+                    '<li>Prior knowledge / individual interpretation: 48.3 %[cite: 1, 3]</li>' +
+                    '<li>Environment / socialization: 44.8 %[cite: 1, 3]</li>' +
+                    '<li>Culture / origin: 27.6 %[cite: 1, 4]</li>' +
+                    '<li>Upbringing: 27.6 %[cite: 1, 4]</li>' +
+                    '<li>Values / beliefs: 17.2 %[cite: 1, 4]</li>' +
+                    '<li>Media / external influences: 13.8 %[cite: 1, 4]</li>' +
+                    '<li>Living conditions / interests: 6.9 %[cite: 1, 4]</li>' +
+                    '<li>Biological factors: 6.9 %[cite: 1, 4]</li>' +
+                    '</ul>',
 
-                    '<b>This section is currently locked.</b>',
+                    '<strong>The opinions of the school are reflected in four central scientific findings:[cite: 1, 4]</strong><br><br>' +
+                    '<strong>1. Cognitive Filter:</strong> We never perceive information completely neutrally. Our prior knowledge, previous experiences, and personal expectations act like an invisible pair of glasses[cite: 1, 4].<br><br>' +
+                    '<strong>2. Previous Beliefs („Confirmation Bias“):</strong> We tend to unconsciously select or interpret information so that it is compatible with existing beliefs. We don\'t just passively absorb facts; we interpret them to keep our worldview stable[cite: 1, 4].<br><br>' +
+                    '<strong>3. Information Sources & Trust:</strong> Especially when uncertain about a topic, we orient ourselves toward others. What information we believe depends heavily on whom we attribute competence and trust to[cite: 1, 4].<br><br>' +
+                    '<strong>4. The Four-Ears Model:</strong> According to the 4-ears model, every statement contains four levels. Two people hear the exact same words but perceive them on different „ears“[cite: 1, 4].',
 
-                    'The key insights and scientific findings will be published after the current school foyer discussion has been completed. This allows all participants to develop and reflect on their own perspectives before exploring the research and conclusions.',
-
-                    
-
+                    '<strong>What else does science say?[cite: 1, 4]</strong><br><br>' +
+                    '<strong>Emotions & Neuroscience:</strong> The brain evaluates information emotionally first, before rational thinking kicks in. Mood & emotions strongly influence thinking[cite: 1, 4].<br><br>' +
+                    '<strong>Framing:</strong> The phrasing of information determines its effect and triggers different thoughts (e.g., 90% survival rate vs. 10% mortality rate)[cite: 1, 4].<br><br>' +
+                    '<strong>Motivated Reasoning:</strong> If information threatens one\'s identity or group affiliation, the brain switches to defense mode to protect self-image and worldview[cite: 1, 4].'
                 ],
 
                 question: 'What argument or conversation recently challenged your perspective on an important issue?'
@@ -234,6 +272,7 @@
             }
 
         },
+];
 
         {
 
