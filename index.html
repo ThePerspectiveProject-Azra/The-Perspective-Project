@@ -39,8 +39,8 @@
 
 <div class="status-banner">
     <div class="status-banner-content">
-        <span class="status-badge" id="banner-badge">Aktuell in Bearbeitung</span>
-        <span class="status-text" id="banner-text">Das Projekt hat im September 2026 gestartet. Die Ergebnisse werden zeitnah hochgeladen.</span>
+        <span class="status-badge" id="banner-badge">Die Ergebnisse werden jeweils zeitnah im Laufe der Woche veröffentlicht</span>
+        <span class="status-text" id="banner-text">Das Projekt hat im September 2026 gestartet. </span>
     </div>
 </div>
 
@@ -79,7 +79,7 @@
             <span class="phase-tag" id="phase1-tag">Phase 1: 2026 – 2028</span>
             <h3 id="phase1-title">Schul-Foyer Initiative</h3>
             <p id="phase1-desc">
-                Alle 3 Wochen verwandelt sich das Schulfoyer in einen philosophischen und gesellschaftlichen Resonanzraum. Schülerinnen und Schüler diskutieren spontan über komplexe Fragen zu Psychologie, Werten, Technologie und Ethik – gefördert durch evidenzbasierte Anstöße.
+                Alle 2 Wochen verwandelt sich das Schulfoyer in einen philosophischen und gesellschaftlichen Resonanzraum. Schülerinnen und Schüler diskutieren spontan über komplexe Fragen zu Psychologie, Werten, Technologie und Ethik – gefördert durch evidenzbasierte Anstöße.
             </p>
         </div>
 
@@ -183,7 +183,7 @@
         {
             id: 1,
 
-            isActive: true, // Das aktuell laufende Thema im Schulfoyer
+            isActive: false, // Das aktuell laufende Thema im Schulfoyer
 
             cat: 'psychology',
 
@@ -278,7 +278,7 @@
 
             id: 2,
 
-            isActive: false,
+            isActive: true,
 
             cat: 'psychology',
 
@@ -294,9 +294,15 @@
 
             titleEN: 'Why Do People Defend Their Opinions?',
 
-            qDE: ['Hauptfrage: Warum halten Menschen an Überzeugungen fest, selbst wenn sie neue Informationen bekommen?'],
+            
 
-            qEN: ['Main question: Why do people cling to convictions even when presented with new counter-evidence?']
+
+qDE: ['Hauptfrage: Warum verteidigen Menschen ihre Meinungen?'],
+
+            qEN: ['Main question: Why do people defend their opinions?']
+
+
+
 
         },
         {
@@ -764,9 +770,10 @@
             const t = uiText[currentLang];
 
             let activeBadgeHtml = item.isActive ? `<span class="active-pill">${t.activeBadge}</span>` : '';
-            let statusFooter = item.isActive 
-                ? `<span style="color: var(--primary-crimson);">${t.clickToExplore}</span>` 
-                : `<span class="locked-pill">🔒 ${t.lockedText}</span>`;
+            let hasResults = item.detailDE && item.detailDE.overview;
+let statusFooter = hasResults || item.isActive 
+    ? `<span style="color: var(--primary-crimson);">${t.clickToExplore}</span>` 
+    : `<span class="locked-pill">🔒 ${t.lockedText}</span>`;
 
             let qListHtml = '';
             questions.forEach(q => {
@@ -808,7 +815,7 @@
 
         const contentContainer = document.getElementById('modal-body-content');
 
-        if (item.isActive && item.detailDE) {
+        if (item.detailDE && item.detailDE.overview) {
             const detail = currentLang === 'de' ? item.detailDE : item.detailEN;
             
             let insightsHtml = '';
