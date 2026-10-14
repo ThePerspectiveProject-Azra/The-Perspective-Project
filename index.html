@@ -274,11 +274,10 @@
         },
 
 
-        {
-
+       {
             id: 2,
 
-            isActive: true,
+            isActive: true, // Das ist jetzt das aktuelle Thema im Schulfoyer
 
             cat: 'psychology',
 
@@ -294,16 +293,77 @@
 
             titleEN: 'Why Do People Defend Their Opinions?',
 
-            
+            qDE: ['Hauptfrage: Warum verteidigen Menschen ihre Meinungen?'],
 
+            qEN: ['Main question: Why do people defend their opinions?'],
 
-qDE: ['Hauptfrage: Warum verteidigen Menschen ihre Meinungen?'],
+            detailDE: {
+                overview: 'Warum halten Menschen so starr an ihren Überzeugungen fest, selbst wenn Gegenargumente im Raum stehen? Hier ist die Auswertung der Umfrage und das Meinungs-Glas aus unserem Schulfoyer:',
 
-            qEN: ['Main question: Why do people defend their opinions?']
+                insights: [
+                    '<strong>1. 🪞 Ego, Stolz & Rechthaben:</strong><br>' +
+                    '<ul>' +
+                    '<li>Menschen wollen recht haben.</li>' +
+                    '<li>Es fällt ihnen schwer, zuzugeben, dass sie falschliegen.</li>' +
+                    '<li>Manche wollen ihr Ego schützen und keine Schwäche zeigen.</li>' +
+                    '</ul>',
 
+                    '<strong>2. 🛡️ Angst & Unsicherheit:</strong><br>' +
+                    '<ul>' +
+                    '<li>Menschen haben Angst, falschzuliegen.</li>' +
+                    '<li>Sie fürchten Kritik oder negative Konsequenzen.</li>' +
+                    '<li>Sie möchten nicht ausgegrenzt oder für einen Fehler bestraft werden.</li>' +
+                    '</ul>',
 
+                    '<strong>3. 🧭 Sicherheit & Orientierung:</strong><br>' +
+                    '<ul>' +
+                    '<li>Meinungen helfen Menschen, die Welt zu verstehen.</li>' +
+                    '<li>Sie geben Sicherheit, Gewissheit und Orientierung.</li>' +
+                    '<li>Eine vertraute Überzeugung aufzugeben, kann sich deshalb schwierig anfühlen.</li>' +
+                    '</ul>',
 
+                    '<strong>4. 👥 Familie, Umfeld & Gruppendruck:</strong><br>' +
+                    '<ul>' +
+                    '<li>Erziehung und Erfahrungen prägen unsere Meinungen.</li>' +
+                    '<li>Wir übernehmen Überzeugungen von Menschen in unserem Umfeld.</li>' +
+                    '<li>Manche verteidigen ihre Meinung, weil sie dazugehören möchten und Angst vor Ausgrenzung haben.</li>' +
+                    '</ul>',
 
+                    '<strong>5. 💭 Überzeugung & andere Sichtweisen:</strong><br>' +
+                    '<ul>' +
+                    '<li>Menschen halten ihre eigene Meinung für richtig oder für die Wahrheit.</li>' +
+                    '<li>Sie sind manchmal nicht bereit, andere Weltanschauungen oder Kritik anzunehmen.</li>' +
+                    '<li>Menschen können die Welt unterschiedlich wahrnehmen und interpretieren.</li>' +
+                    '</ul>',
+
+                    '<strong>6. 🗣️ Argumentieren & Überzeugen:</strong><br>' +
+                    '<ul>' +
+                    '<li>Menschen versuchen, andere von ihrer Meinung zu überzeugen.</li>' +
+                    '<li>Manche können ihre Meinung besonders gut sprachlich verteidigen.</li>' +
+                    '<li>Gegenargumente werden manchmal als persönlicher Angriff wahrgenommen.</li>' +
+                    '<li>Manche halten an ihrer Meinung fest, ohne bewusst darüber nachzudenken.</li>' +
+                    '</ul>',
+
+                    '<strong>Was sagt die Wissenschaft dazu?</strong><br><br>' +
+                    '<strong>🧠 1. Kognitive Dissonanz (nach Leon Festinger):</strong> Widersprechen neue Informationen unseren Überzeugungen, kann ein unangenehmes Gefühl entstehen. Wir versuchen möglicherweise, diesen Widerspruch aufzulösen, indem wir unsere Meinung ändern oder die Gegenargumente abwerten.<br><br>' +
+                    '<strong>🔎 2. Bestätigungsfehler (Confirmation Bias):</strong> Wir achten häufig besonders auf Informationen, die unsere bestehende Meinung bestätigen, und nehmen widersprechende Informationen weniger stark wahr oder bewerten sie kritischer.<br><br>' +
+                    '<strong>👥 3. Soziale Identität:</strong> Die Sozialpsychologie zeigt: Die Zugehörigkeit zu einer Gruppe ist ein Teil unseres Selbstbildes. Deshalb kann es schwierig sein, eine Meinung zu ändern, wenn unsere Familie, Freunde oder andere wichtige Gruppen eine andere Haltung vertreten.'
+                ],
+
+                question: 'Welches Argument hat deine Sichtweise auf ein Thema in letzter Zeit am stärksten verändert?'
+            },
+
+            detailEN: {
+                overview: 'Why do people hold on so rigidly to their beliefs even when counterarguments are present? Here is the evaluation from our school foyer:',
+                insights: [
+                    '<strong>1. Ego, Pride & Being Right:</strong> People want to be right and protect their ego.<br><br>' +
+                    '<strong>2. Fear & Insecurity:</strong> Fear of being wrong, facing criticism, or social exclusion.<br><br>' +
+                    '<strong>3. Security & Orientation:</strong> Opinions provide a sense of certainty and help us understand the world.<br><br>' +
+                    '<strong>4. Environment & Peer Pressure:</strong> Upbringing, social circles, and the desire to belong.<br><br>' +
+                    '<strong>5. Scientific Perspective:</strong> Includes Cognitive Dissonance (Leon Festinger), Confirmation Bias, and Social Identity Theory.'
+                ],
+                question: 'What argument or conversation recently challenged your perspective on an important issue?'
+            }
         },
         {
             id: 3,
