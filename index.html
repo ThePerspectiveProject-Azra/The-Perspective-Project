@@ -274,32 +274,24 @@
         },
 
 
-      {
+     {
             id: 2,
-
-            isActive: true, // Das ist jetzt das aktuelle Thema im Schulfoyer
+            isActive: false,            // GESPERRT: Ergebnisse nicht anklickbar
+            isCurrentInFoyer: true,     // Zeigt das rote "Aktuelles Thema"-Badge
 
             cat: 'psychology',
-
             catDE: 'Psychologie & Denken',
-
             catEN: 'Psychology & Cognition',
-
             sessionDE: 'EDITION 01 | WOCHE 4–6',
-
             sessionEN: 'EDITION 01 | WEEK 4–6',
-
             titleDE: 'Warum verteidigen Menschen ihre Meinungen?',
-
             titleEN: 'Why Do People Defend Their Opinions?',
-
             qDE: ['Hauptfrage: Warum verteidigen Menschen ihre Meinungen?'],
-
             qEN: ['Main question: Why do people defend their opinions?'],
-
+            teaserDE: '🔍 Kontext & Perspektive:\nDas Verteidigen eigener Ansichten schützt unser Selbstbild. Studien zeigen, dass ------ einen biologischen Schutzreflex auslöst.',
+            teaserEN: '🔍 Context & Perspective:\nDefending opinions protects identity. Studies indicate that ------ triggers an innate psychological defense mechanism.',
             detailDE: {
                 overview: 'Warum halten Menschen so starr an ihren Überzeugungen fest, selbst wenn Gegenargumente im Raum stehen? Hier ist die Auswertung der Umfrage und das Meinungs-Glas aus unserem Schulfoyer:',
-
                 insights: [
                     '<strong>1. 🪞 Ego, Stolz & Rechthaben:</strong><br>' +
                     '<ul>' +
@@ -349,14 +341,10 @@
                     '<strong>🔎 2. Bestätigungsfehler (Confirmation Bias):</strong> Wir achten häufig besonders auf Informationen, die unsere bestehende Meinung bestätigen, und nehmen widersprechende Informationen weniger stark wahr oder bewerten sie kritischer.<br><br>' +
                     '<strong>👥 3. Soziale Identität:</strong> Die Sozialpsychologie zeigt: Die Zugehörigkeit zu einer Gruppe ist ein Teil unseres Selbstbildes. Deshalb kann es schwierig sein, eine Meinung zu ändern, wenn unsere Familie, Freunde oder andere wichtige Gruppen eine andere Haltung vertreten.'
                 ],
-
                 question: 'Welches Argument hat deine Sichtweise auf ein Thema in letzter Zeit am stärksten verändert?'
             },
-
             detailEN: {
-
                 overview: 'Why do people defend their beliefs so fiercely, even when presented with counterarguments? Here is the analysis of the responses collected from our opinion jar in the school foyer:',
-
                 insights: [
                     '<strong>1. 🪞 Ego, Pride & Being Right:</strong><br>' +
                     '<ul>' +
@@ -406,14 +394,13 @@
                     '<strong>🔎 2. Confirmation Bias:</strong> We tend to actively look for information that confirms our existing beliefs while ignoring or critically scrutinizing contradicting evidence.<br><br>' +
                     '<strong>👥 3. Social Identity Theory:</strong> Social psychology demonstrates that group belonging forms a key part of our self-image. Therefore, changing a viewpoint can be difficult if our family, friends, or social groups hold a different stance.'
                 ],
-
                 question: 'What is a belief or opinion you used to defend strongly that you have changed your mind about?'
-
             }
         },
         {
             id: 3,
-            isActive: false,
+            isActive: true,            // Gesperrt
+            isCurrentInFoyer: false,    // Zukünftiges Thema
             cat: 'psychology',
             catDE: 'Psychologie & Denken',
             catEN: 'Psychology & Cognition',
@@ -422,7 +409,9 @@
             titleDE: 'Wie entstehen Vorurteile und warum haben wir sie?',
             titleEN: 'How Do Biases Arise and Why Do We Have Them?',
             qDE: ['Hauptfrage: Sind Vorurteile immer bewusst oder entstehen sie manchmal unbemerkt?'],
-            qEN: ['Main question: Are prejudices always conscious, or do they often form undetected?']
+            qEN: ['Main question: Are prejudices always conscious, or do they often form undetected?'],
+            teaserDE: '🔍 Kontext & Perspektive:\nUnser Gehirn nutzt Heuristiken zur Abkürzung. Dadurch führen ------ oft unbemerkt zu Fehleinschätzungen anderer Gruppen.',
+            teaserEN: '🔍 Context & Perspective:\nOur brain relies on mental shortcuts. Consequently, ------ often leads to cognitive shortcuts below conscious awareness.'
         },
         {
             id: 4,
